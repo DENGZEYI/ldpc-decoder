@@ -3,5 +3,5 @@ project(ldpc)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ldpc_decoder_bf ldpc_decoder_bf.cpp)
+add_executable(ldpc_decoder_bf src/ldpc_decoder_bf.cpp)
 
