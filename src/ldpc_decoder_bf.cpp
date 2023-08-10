@@ -131,6 +131,7 @@ int decode(){
             cout << code[n] << "  ";
         cout << endl << endl;
 
+        // calculate1状态
         int judge[M];//校验比特
         for (int m = 0; m < M; ++m) {
             judge[m] = 0;
@@ -140,6 +141,7 @@ int decode(){
         }
 
         // 第一次检查
+        // check状态
         int flag = 0;
         for (int m = 0; m < M; ++m) {
             flag |= judge[m];
@@ -155,6 +157,7 @@ int decode(){
         }
 
         //校验错误，统计错误数目
+        // calculate2状态
         int wrong_num[N];
         for (int n = 0; n < N; ++n) {
             wrong_num[n]=0;
